@@ -1,0 +1,15 @@
+<h1> Sign Up for a New Activity!</h1>
+<%= form_for @daycare do |f| %>
+    <h3> <%= f.label :dog_id, "Dog:" %> </h3>
+    <%= f.collection_select :dog_id, @dogs, :id, :name %> <br>
+    <br>
+    <h3><%= f.label :activity_id, "Activity: " %></h3>
+    <%= f.collection_select :activity_id, @activities, :id, :name %> <br>
+    <br>
+    <%= f.submit "Sign Up!" %>
+<% end %>
+<br>
+<br>
+
+<%= button_to("Back to Activities", activities_path, method: :get) %><br>
+<%= button_to("Back to Dogs", dogs_path, method: :get) %><br>

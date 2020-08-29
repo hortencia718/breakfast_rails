@@ -1,0 +1,14 @@
+<%= form_for @dog do |f| %>
+    <h3><%= f.label :name %></h3>
+    <%= f.text_field :name %><br>
+    <br>
+    <h3><%= f.label :age %></h3>
+    <%= f.text_field :age %><br>
+    <br>
+    <br>
+    <%= f.submit %>
+    <br>
+    <br>
+<% end%>
+
+<%= button_to("Home", dogs_path, method: :get) %><br>
