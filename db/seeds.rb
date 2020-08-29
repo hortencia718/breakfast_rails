@@ -5,8 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Dog.destroy_all
+Activity.destroy_all
+Daycare.destroy_all
+
 dog_1 = Dog.create(name: "Coco", age: 5)
 
 activity_1 = Activity.create(name: "Swimming", duration: 30)
 
-daycare_1 = Daycare.create(dog_id: 1, activity_id: 1)
+daycare_1 = Daycare.create(dog_id: dog_1, activity_id: activity_1)
