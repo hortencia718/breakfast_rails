@@ -1,7 +1,9 @@
 <h1>Welcome to Doggy Daycare!</h1>
-<%= image_tag ("IMG.jpg"), size: "500x300", alt: "Cute Puppy" %>
+<%= button_to("Activities", activities_path, method: :get) %><hr>
+<%# <%= image_tag ("IMG.jpg"), size: "500x300", alt: "Cute Puppy" %> 
 <ul>
   <% @dogs.each do |dog| %>
-    <h2><li><%= link_to dog.name, dog_path(dog) %> </li></h2>
+    <h2><li><%= link_to dog.name, dog_path(dog) %> </li>
+    <%= image_tag ("IMG.jpg"), size: "500x300", alt: "Cute Puppy" %></h2>
   <%end%>
 </ul>

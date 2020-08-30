@@ -81,11 +81,10 @@ class DogsController < ApplicationController
     def destroy
         #we want to find what we are destroying
         #after destroying we redirect to homepage
-         #@dog = Dog.find(params[:id])
+        @dog = Dog.find(params[:id])
+        # Dog.find(params[:id])
+        @dog.destroy
         
-         @dog.delete
-            
-         Dog.find(params[:id])
          redirect_to dogs_path
 
     end
@@ -95,6 +94,11 @@ class DogsController < ApplicationController
 
     private
 
+    # def get_dogs
+    #     @dog = Dog.find(params[:id])
+    # end
+
+    
     def dog_params
         params.require(:dog).permit(:name, :age)
     end

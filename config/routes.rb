@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get "/activities", to: "activities#index", as: "activities"
   get "/activities/:id", to: "activities#show", as: "activity"
+  delete "/activities/:id", to: "activities#destroy"
   
   get "/daycares", to: "daycares#index", as: "daycares"
   get "/daycares/new", to: "daycares#new", as: "new_daycare"

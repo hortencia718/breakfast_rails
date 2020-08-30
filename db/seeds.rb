@@ -57,3 +57,4 @@ daycare_11 = Daycare.create(dog: dog_6, activity: activity_8)
 daycare_12 = Daycare.create(dog: dog_13, activity: activity_10)
 daycare_13 = Daycare.create(dog: dog_11, activity: activity_9)
 daycare_14 = Daycare.create(dog: dog_2, activity: activity_7)
+puts "😍"

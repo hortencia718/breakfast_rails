@@ -1,2 +1,4 @@
 <h1>Name: <%= @activity.name %> </h1>
 <p>Duration: <%= @activity.duration %> minutes. </p>
+<p><%=button_to "delete", activity_path, method: :delete%></p>
+<p><%=button_to "Home", activities_path(@activity), method: :get%></p>

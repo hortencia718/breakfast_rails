@@ -1,13 +1,10 @@
 <h1>Do you want to delete an activity?</h1>
 
 <%= form_for @dog do |f| %>
-   
-
     <h3><%= f.label :activities, "Activity: " %></h3>
     <%= f.collection_select :activities, @activities, :id, :name %> <br>
     <br>
     <%= f.submit "Delete this activity!" %>
-    
 <% end %>
 <br>
 <br>
