@@ -78,6 +78,20 @@ class DogsController < ApplicationController
     end
 
 
+    def destroy
+        #we want to find what we are destroying
+        #after destroying we redirect to homepage
+         #@dog = Dog.find(params[:id])
+        
+         @dog.delete
+            
+        # Dog.find(params[:id]).destroy
+         redirect_to dogs_path
+
+    end
+
+
+
 
     private
 

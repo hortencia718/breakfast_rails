@@ -3,6 +3,10 @@
 <p> <%= pluralize(@dog.activities.count, "activity" )%> </p>
 <ol>Activity: <% @dog.activities.each do |activity| %> 
     <li><%= link_to activity.name, activity_path(activity) %> </li>
-<% end %>
+   
+<% end %><br>
+ 
 </ol>
+
+<%= button_to "Delete Myself", @dog, method: :delete %><br>
    

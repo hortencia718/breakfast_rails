@@ -1,6 +1,6 @@
 class Dog < ApplicationRecord
     has_many :daycares
     has_many :activities, through: :daycares
-    # Dependent :destroy
-    # Dependent :delete_all
+    # has_many :activities, dependent: :destroy
+    # Dependent: :delete_all
 end
