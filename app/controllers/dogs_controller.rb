@@ -85,7 +85,7 @@ class DogsController < ApplicationController
         
          @dog.delete
             
-        # Dog.find(params[:id]).destroy
+         Dog.find(params[:id])
          redirect_to dogs_path
 
     end
