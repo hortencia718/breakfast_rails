@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get "/dogs/new", to: "dogs#new", as: "new_dog"
   post "/dogs", to: "dogs#create"
   get "/dogs/:id", to: "dogs#show", as: "dog"
+  get "/dogs/:id/edit", to: "dogs#edit", as: "edit_dog"
+  patch "/dogs/:id", to: "dogs#update"
+  delete "/dogs/:id", to: "dogs#destroy"
 
   get "/activities", to: "activities#index", as: "activities"
   get "/activities/:id", to: "activities#show", as: "activity"

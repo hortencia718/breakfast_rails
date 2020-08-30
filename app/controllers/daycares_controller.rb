@@ -15,4 +15,9 @@ class DaycaresController < ApplicationController
         # redirect_to dog_path(@daycare.dog)
         redirect_to @daycare.dog
     end
+
+    
+
+
+
 end
