@@ -1,13 +1,12 @@
 <h1>Do you want to delete an activity?</h1>
 
 <%= form_for @dog do |f| %>
-    <h3> <%= f.label :dog_id, "Dog:" %> </h3>
-    <%= f.collection_select :dog_id, @dogs, :id, :name %> <br>
-    <br>
-    <h3><%= f.label :activity_id, "Activity: " %></h3>
-    <%= f.collection_select :activity_id, @activities, :id, :name %> <br>
+    
+    <h3><%= f.label :activities, "Activity: " %></h3>
+    <%= f.collection_select :activities, @activities, :id, :name %> <br>
     <br>
     <%= f.submit "Delete this activity!" %>
 <% end %>
 <br>
 <br>
+

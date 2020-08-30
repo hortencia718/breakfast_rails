@@ -19,10 +19,11 @@ class DogsController < ApplicationController
 
 
     def edit
-        # byebug
+          byebug
+        
         @dog = Dog.find(params[:id]) 
-        # @dogs = Dog.all
-        @activities = Activity.all
+       
+        @activities = @dog.activities
 
     end
 
